@@ -156,27 +156,27 @@ http://logging.apache.org/log4j/2.x/manual/configuration.html[Log4j
 documentation].
 
 [float]
-[[deprecation-logging]]
-=== Deprecation logging
+[[depreciation-logging]]
+=== Depreciation logging
 
 In addition to regular logging, Elasticsearch allows you to enable logging
-of deprecated actions. For example this allows you to determine early, if
+of depreciated actions. For example this allows you to determine early, if
 you need to migrate certain functionality in the future. By default,
-deprecation logging is enabled at the WARN level, the level at which all
-deprecation log messages will be emitted.
+depreciation logging is enabled at the WARN level, the level at which all
+depreciation log messages will be emitted.
 
 [source,properties]
 --------------------------------------------------
-logger.deprecation.level = warn
+logger.depreciation.level = warn
 --------------------------------------------------
 
-This will create a daily rolling deprecation log file in your log directory.
+This will create a daily rolling depreciation log file in your log directory.
 Check this file regularly, especially when you intend to upgrade to a new
 major version.
 
-The default logging configuration has set the roll policy for the deprecation
+The default logging configuration has set the roll policy for the depreciation
 logs to roll and compress after 1 GB, and to preserve a maximum of five log
 files (four rolled logs, and the active log).
 
-You can disable it in the `config/log4j2.properties` file by setting the deprecation
+You can disable it in the `config/log4j2.properties` file by setting the depreciation
 log level to `error`.
